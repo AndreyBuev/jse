@@ -1,5 +1,7 @@
 package ru.buevas.tm;
 
+import ru.buevas.tm.constant.TerminalConst.CmdParams;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,13 +14,13 @@ public class Main {
 
         final String param = args[0];
         switch (param) {
-            case "version": {
+            case CmdParams.VERSION: {
                 printVersion();
             }
-            case "about": {
+            case CmdParams.ABOUT: {
                 printAbout();
             }
-            case "help": {
+            case CmdParams.HELP: {
                 printHelp();
             }
             default: {
