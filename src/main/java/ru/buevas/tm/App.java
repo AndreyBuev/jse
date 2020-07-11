@@ -2,7 +2,7 @@ package ru.buevas.tm;
 
 import ru.buevas.tm.constant.TerminalConst.CmdParams;
 
-public class Main {
+public class App {
 
     public static void main(String[] args) {
         printWelcome();
