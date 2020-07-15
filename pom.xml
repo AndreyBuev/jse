@@ -10,6 +10,13 @@
 
     <name>task-manager</name>
 
+    <developers>
+        <developer>
+            <name>Andrey Buev</name>
+            <email>buev_as@mail.ru</email>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
