@@ -1,6 +1,13 @@
 package ru.buevas.tm.constant;
 
+/**
+ * Константы для консольной версии приложения приложения
+ */
 public class TerminalConst {
+
+    /**
+     * Допустимые команды консольного приложения
+     */
     public static class CmdParams {
         public static final String VERSION = "version";
         public static final String ABOUT = "about";
