@@ -2,6 +2,7 @@ package ru.buevas.tm.constant;
 
 /**
  * Константы для консольной версии приложения приложения
+ * @author Andrey Buev
  */
 public class TerminalConst {
 
