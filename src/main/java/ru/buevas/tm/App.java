@@ -7,12 +7,14 @@ import ru.buevas.tm.constant.TerminalConst.CmdParams;
 
 /**
  * Основной класс приложения
+ *
  * @author Andrey Buev
  */
 public class App {
 
     /**
      * Точка входа в приложение
+     *
      * @param args - параметры командной строки, переданные при старте приложения
      */
     public static void main(String[] args) {
@@ -23,10 +25,13 @@ public class App {
 
     /**
      * Запуск приложения с аргументом из командной строки
+     *
      * @param args - массив аргументов
      */
     public static void run(final String[] args) {
-        if (args == null || args.length < 1) return;
+        if (args == null || args.length < 1) {
+            return;
+        }
 
         final String command = args[0];
         System.exit(execCommand(command));
@@ -35,8 +40,9 @@ public class App {
     /**
      * Запуск приложения в режиме бесконечного цикла
      */
-    public static void process () {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void process() {
+        InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStreamReader);
         String command = "";
         while (!CmdParams.EXIT.equals(command)) {
             try {
@@ -87,6 +93,7 @@ public class App {
 
     /**
      * Вывод на экран версии приложения
+     *
      * @return 0
      */
     public static int printVersion() {
@@ -96,6 +103,7 @@ public class App {
 
     /**
      * Вывод на экран сведений о разработчике
+     *
      * @return 0
      */
     public static int printAbout() {
@@ -105,6 +113,7 @@ public class App {
 
     /**
      * Вывод на эркан справки по доступным командам
+     *
      * @return 0
      */
     public static int printHelp() {
@@ -117,6 +126,7 @@ public class App {
 
     /**
      * Вывод на экран сообщения об ошибке
+     *
      * @param message - сообщение
      * @return -1
      */
@@ -127,6 +137,7 @@ public class App {
 
     /**
      * Завершение работы приложения
+     *
      * @return 0
      */
     public static int exit() {
